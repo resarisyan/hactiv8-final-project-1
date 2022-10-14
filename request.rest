@@ -1,0 +1,49 @@
+###
+POST http://localhost:5000/api/v1/users/login
+Content-Type: application/json
+
+{
+    "email": "resarisyan77@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/api/v1/users/register
+Content-Type: application/json
+
+{
+    "email": "resarisyan77@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/api/v1/reflections
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1NzcxNDM3fQ.QMC24rmGIsHXt0jbDxzeR73R5MKHoHe1K7oSm0_719s
+
+{
+    "success":"test success",
+    "low_point":"test low_point",
+    "take_away":"test take_away"
+}
+
+###
+GET http://localhost:5000/api/v1/reflections
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1NzcxNDM3fQ.QMC24rmGIsHXt0jbDxzeR73R5MKHoHe1K7oSm0_719s
+
+###
+PUT http://localhost:5000/api/v1/reflections/1
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1NzcxNDM3fQ.QMC24rmGIsHXt0jbDxzeR73R5MKHoHe1K7oSm0_719s
+
+{
+    "success":"test update success",
+    "low_point":"test update low_point",
+    "take_away":"test update take_away"
+}
+
+###
+DELETE http://localhost:5000/api/v1/reflections/1
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1NzcxNDM3fQ.QMC24rmGIsHXt0jbDxzeR73R5MKHoHe1K7oSm0_719s
